@@ -1,0 +1,26 @@
+Ontology{
+	Concepts[
+		{Book},
+		{
+			Page,
+			Attributes[
+				{text string},
+				{number int}
+
+			]
+		},
+		{Title},
+		{SpecialTerm}
+	]
+	Hierarchies[
+	]
+	Relations[
+		{has},
+		{contains}
+	]
+	Links[
+		{Book has Page},
+		{Book has min 1 Title},
+		{Page contains SpecialTerm}
+	]
+}

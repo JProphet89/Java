@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="pizza.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.mec.org/ontologies/mec.owl" uri="mec.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.semanticweb.org/jprophet89/ontologies/2013/11/bookindex" uri="bookindex.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.semanticweb.org/jprophet89/ontologies/2013/11/compsciendepar" uri="compsciendepar.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.semanticweb.org/jprophet89/ontologies/2013/11/langprocessor" uri="langprocessor.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.semanticweb.org/jprophet89/ontologies/2013/11/lavanda" uri="lavanda.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.semanticweb.org/jprophet89/ontologies/2013/11/orienteering" uri="orienteering.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.semanticweb.org/jprophet89/ontologies/2013/11/shoppinglist" uri="shoppinglist.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.semanticweb.org/jprophet89/ontologies/2013/11/wine" uri="wine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1399475173006" name="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine" uri="wine2.owl"/>
+    </group>
+</catalog>

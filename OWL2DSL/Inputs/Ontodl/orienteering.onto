@@ -1,0 +1,31 @@
+Ontology{
+	Concepts[
+		{OrienteeringPlan},
+		{Point},
+        {DifficultLevel},
+		{Path},
+        {AgeClass},
+        {Name},
+        {
+        	Coordinates,
+        	Attributes[
+        		{lang string},
+        		{long string}
+        	]
+        }
+	]
+	Hierarchies[
+	]
+	Relations[
+		{has},
+        {contains}
+	]
+	Links[
+        {OrienteeringPlan contains Path},
+        {Path contains Point},
+		{Path has max 1 DifficultLevel},
+        {Path has max 1 AgeClass},
+        {Point has max 1 Name},
+		{Point has  max 1 Coordinates}
+	]
+}

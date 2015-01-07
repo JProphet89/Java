@@ -1,0 +1,16 @@
+Thing[
+Book{	 "book1"
+,[ 	{ has "page1" } { has "page2" } { has "page3" } 	{ has "title1" } ]
+}
+Page{	 "page1"
+,[ 	{ contains "special1" }
+]
+}
+Page{	 "page2"
+}
+Page{	 "page3"
+}
+Title{	 "title1"
+}
+SpecialTerm{	 "special1" }
+]

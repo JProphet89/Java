@@ -1,0 +1,74 @@
+Ontology{
+	Concepts[
+		{KnowledgeDomain},
+		{Languagedesign},
+		{GPL},
+		{DSL},
+		{ProgramLanguage},
+		{ComputerProgram},
+		{Grammars},
+		{LanguageProc},
+		{CompilerConstTool},
+		{Interpreter},
+		{Analyzer},
+		{Translator},
+		{Compilers},
+		{Analysis},
+		{LexicalAnal},
+		{SyntacticAnal},
+		{SemanticAnal},
+		{CodeGen},
+		{RegularExp},
+		{CFG},
+		{TG},
+		{AG},
+		{SDT},
+		{SemDT}
+	]
+	Hierarchies[
+		{ProgramLanguage > GPL},
+		{ProgramLanguage > DSL},
+		{LanguageProc > Interpreter},
+		{LanguageProc > Compilers},
+		{LanguageProc > Analyzer},
+		{LanguageProc > Translator},
+		{Grammars > CFG},
+		{Grammars > TG},
+		{Grammars > AG},
+		{Analysis > LexicalAnal},
+		{Analysis > SyntacticAnal},
+		{Analysis > SemanticAnal}
+	]
+	Relations[
+		{bases},
+		{produces},
+		{isWritten},
+		{requires},
+		{uses},
+		{implements},
+		{specifiedBy},
+		{is_expressed},
+		{constructs}
+	]
+	Links[
+		{KnowledgeDomain bases Languagedesign},
+		{Languagedesign is_expressed Grammars},
+		{Grammars produces min 1 max 1 ProgramLanguage},
+		{ComputerProgram isWritten ProgramLanguage},
+		{ComputerProgram requires LanguageProc},
+		{ProgramLanguage specifiedBy min 1 Grammars},
+		{ProgramLanguage specifiedBy min 2 RegularExp},
+		{CompilerConstTool constructs LanguageProc},
+		{CompilerConstTool uses Grammars},
+		{LexicalAnal uses RegularExp},
+		{SyntacticAnal uses CFG},
+		{SemanticAnal uses TG},
+		{SemanticAnal uses min 1 max 2 AG},
+		{CodeGen uses TG},
+		{CodeGen uses AG},
+		{TG implements max 2 SDT},
+		{AG implements SemDT},
+		{LanguageProc requires Analysis},
+		{LanguageProc requires CodeGen}
+	]
+}

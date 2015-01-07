@@ -1,0 +1,26 @@
+//before you run this template on the OWL2GRA remove all comments that
+//are generated to help you understand the way that this work
+
+Thing[
+Bag{	 "Intance of bag ID" 
+,[ 	{ contains item "itemID_reference" } // many possible but need to be sequential ]	
+}
+Client{	 "Intance of client ID" 
+,[//this instances bellow are not necessary
+Order{	 "Intance of order ID" 
+,[ 	{ contains bag "bagID_reference" } // many possible but need to be sequential ]	
+}
+]
+,[ 	{ owns order "orderID_reference" } // many possible but need to be sequential ]	
+}
+Item{	 "Intance of item ID" 
+,[ 	{ has quantity "quantityID_reference" }  // only one possible	{ has type "typeID_reference" }  // only one possible ]	
+}
+Laundry{	 "Intance of laundry ID" 
+,[ 	{ receives order "orderID_reference" } // many possible but need to be sequential ]	
+}
+Quantity{	 "Intance of quantity ID" 
+}
+Type{	 "Intance of type ID" 	class "some string value"	material "some string value"	tinge "some string value"
+}
+]

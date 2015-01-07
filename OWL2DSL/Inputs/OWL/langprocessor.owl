@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jprophet89/ontologies/2013/11/langprocessor"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/jprophet89/ontologies/2013/11/langprocessor">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>    <Declaration>
+        <Class IRI="#KnowledgeDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Languagedesign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DSL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProgramLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grammar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LanguageProc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompilerConstTool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interpreter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analyzer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Translator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LexicalAnal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SyntacticAnal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticAnal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CodeGen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegularExp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CFG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SDT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemDT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bases"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWritten"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implements"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#specifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#constructs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#GPL"/>
+        <Class IRI="#ProgramLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DSL"/>
+        <Class IRI="#ProgramLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interpreter"/>
+        <Class IRI="#LanguageProc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compiler"/>
+        <Class IRI="#LanguageProc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Analyzer"/>
+        <Class IRI="#LanguageProc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Translator"/>
+        <Class IRI="#LanguageProc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CFG"/>
+        <Class IRI="#Grammar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TG"/>
+        <Class IRI="#Grammar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AG"/>
+        <Class IRI="#Grammar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LexicalAnal"/>
+        <Class IRI="#Analysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntacticAnal"/>
+        <Class IRI="#Analysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticAnal"/>
+        <Class IRI="#Analysis"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bases"/>
+        <Class IRI="#KnowledgeDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#Languagedesign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWritten"/>
+        <Class IRI="#ComputerProgram"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#ComputerProgram"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#specifiedBy"/>
+        <Class IRI="#ProgramLanguage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#specifiedBy"/>
+        <Class IRI="#ProgramLanguage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#constructs"/>
+        <Class IRI="#CompilerConstTool"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#CompilerConstTool"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#LexicalAnal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#SyntacticAnal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#SemanticAnal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#SemanticAnal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#CodeGen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#CodeGen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#TG"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#AG"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#LanguageProc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#LanguageProc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bases"/>
+        <Class IRI="#Languagedesign"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#ProgramLanguage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWritten"/>
+        <Class IRI="#ProgramLanguage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#LanguageProc"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#specifiedBy"/>
+        <Class IRI="#Grammar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#specifiedBy"/>
+        <Class IRI="#RegularExp"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#constructs"/>
+        <Class IRI="#LanguageProc"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Grammar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#RegularExp"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#CFG"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#TG"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#AG"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#TG"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#AG"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#SDT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#SemDT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Analysis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#CodeGen"/>
+    </ObjectPropertyRange>
+</Ontology>

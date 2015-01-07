@@ -1,0 +1,41 @@
+Thing[
+  ShoppingList{
+    "list1",[
+      {has "item1"},
+      {has "item2"}
+    ]
+  },
+  ShoppingList{
+    "list2",[
+      {has "item3"},
+      {has "item2"}
+    ]
+  },
+  ShoppingList{
+    "list3",[
+      {has "item1"},
+      {has "item3"}
+    ]
+  },
+  Item{
+    "item1",[
+      {has "name1"}
+    ]
+  },
+  Item{
+    "item2",[
+      {has "name1"}
+    ]
+  },
+  Item{
+    "item3",[
+      {has "name2"}
+    ]
+  },
+  Name{
+    "name1"
+  },
+  Name{
+    "name2"
+  }
+]

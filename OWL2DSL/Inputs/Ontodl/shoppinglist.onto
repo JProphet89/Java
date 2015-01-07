@@ -1,0 +1,18 @@
+Ontology{
+	Concepts[
+		{ShoppingList},
+		{Item},
+		{Name},
+		{Type}
+	]
+	Hierarchies[
+	]
+	Relations[
+		{has}
+	]
+	Links[
+		{ShoppingList has Item},
+		{Item has min 1 Name},
+		{Item has min 1 Type}
+	]
+}

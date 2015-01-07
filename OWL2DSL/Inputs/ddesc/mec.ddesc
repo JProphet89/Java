@@ -1,0 +1,202 @@
+Thing[
+	Imagem{
+		"Refimag105"
+	},
+	Localizacao{
+		"Local1"
+		,[
+			Localidade{
+				"Barcelos"
+				,[
+					Freguesia{
+						"Manhente"
+					},
+					Freguesia{
+						"Arcozelo"
+					},
+					Freguesia{
+						"Galegos"
+					},
+					Freguesia{
+						"Vila Verde"
+					}
+				]
+			},
+			Distrito{
+				"Braga"
+			},
+			País{
+				"Portugal"
+			}
+		]
+	},
+	Localizacao{
+		"Local2"
+		,[
+			Localidade{
+				"Freiburg"
+			},
+			Distrito{
+				"Frankfurt"
+			},
+			País{
+				"Alemanha"
+			}
+		]
+	},
+	Passaporte{
+		"Passport-023424314"
+	},
+	Passaporte{
+		"Passport-023424312"
+	},
+	Passaporte{
+		"Passport-023425536"
+	},
+	Pessoa{
+		"João Fonseca"
+		,[
+			Emigrante{
+				"Emi001JoaoFonseca"
+				,[
+					{participouem "emig1"},
+					{temdocumento "Passport-023424314"}
+				]
+			}
+		]
+		,[
+			{ temfamilia "João Fonseca" },
+			{ temvida "vida1" }
+		]
+	},
+	Pessoa{
+		"Diogo Viera"
+		,[
+			Emigrante{
+				"Emi001DiogoVieira"
+				,[
+					{participouem "emig2"},
+					{temdocumento "Passport-023424312"}
+				]
+			}
+			
+		]
+		,[
+			{ temfamilia "Diogo Viera" },
+			{ temvida "vida2" }
+		]
+		
+	},
+	Pessoa{
+		"Joaquim Silva"
+		,[
+			Emigrante{
+				"Emi001JoaquimSilva"
+				,[
+					{participouem "emig3"},
+					{temdocumento "Passport-023425536"}
+				]
+			}
+		]
+		,[
+			{ temvida "vida3" }
+		]
+		
+	},
+	Representavel{
+		"Representavel001"
+		,[
+			Edificio{
+				"Edicio001"
+				,[
+					Casa{
+						"Casa001"
+					},
+					Hospital{
+						"Hospital002"
+					}
+				]
+				,[
+					{ temmorada "Edicio001" }
+				]
+			}
+			,Evento{
+				"evento1"
+				,[
+					Emigracao{
+						"emig1"
+						,[
+							Partida{
+								"partida1"
+								,[
+									{partiude "Manhente"}
+								]
+							}
+							,Chegada{
+								"chegada1"
+								,[
+									{chegoua "Freiburg"}
+								]
+							}
+						]
+					},
+					Emigracao{
+						"emig2"
+						,[
+							Partida{
+								"partida2"
+								,[
+									{partiude "Braga"}
+								]
+							}
+							,Chegada{
+								"chegada2"
+								,[
+									{chegoua "Frankfurt"}
+								]
+							}
+						]
+					},
+					Emigracao{
+						"emig3"
+						,[
+							Partida{
+								"partida3"
+								,[
+									{partiude "Vila Verde"}
+								]
+							}
+							,Chegada{
+								"chegada3"
+								,[
+									{chegoua "Paris"}
+								]
+							}
+						]
+					},
+					Vida{
+						"vida1"
+					},
+					Vida{
+						"vida2"
+					},
+					Vida{
+						"vida3"
+					}
+				]
+			},
+			Lugar{
+				"Freiburg"
+			},
+			Lugar{
+				"Frankfurt"
+			},
+			Lugar{
+				"Paris"
+			},
+			Lugar{
+				"Zurich"
+			}
+		]
+	}
+]

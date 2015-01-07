@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: commons-io-2.4.jar dom4j-2.0.0-ALPHA-2.jar antlr-3.5.1-com
+ plete.jar json-simple-1.1.1.jar
+Main-Class: OWL2GRA
+

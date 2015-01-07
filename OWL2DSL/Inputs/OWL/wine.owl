@@ -1,0 +1,1026 @@
+<?xml version="1.0"?>
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jprophet89/ontologies/2013/11/wine"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/jprophet89/ontologies/2013/11/wine">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>    <Declaration>
+        <Class IRI="#ConsumableThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdibleThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dessert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheeseNutsDessert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetDessert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DarkMeatFowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightMeatFowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonRedMeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedMeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonSpicyRedMeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicyRedMeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonSweetFruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherTomatoBasedFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pasta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithRedSauce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithNonSpicyRedSauce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithSpicyRedSauce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithWhiteSauce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithHeavyCreamSauce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithLightCreamSauce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seafood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlandFish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonBlandFish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shellfish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonOysterShellfish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OysterShellfish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetFruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EatingGrape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WineGrape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MealCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlandFishCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheeseNutsFowlCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DarkMeatFowlCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DessertCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FishCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FruitCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightMeatFowlCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonBlandFishCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonOysterShellfishCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonRedMeatCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonSpicyRedMeatCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonSweetFruitCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherTomatoBasedFoodCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OysterShellfishCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithHeavyCreamCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithightCreamCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithNonSpicyRedSauceCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaWithSpicyRedSauceCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedMeatCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeafoodCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShellfishCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicyRedMeatCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetDessertCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetFruitCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotableLiquid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Juice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlsatianWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmericanWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beaujolais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bordeaux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medoc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Margaux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pauillac"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedBordeaux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sauternes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StEmilion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteBordeaux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burgundy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedBurgundy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CotesDOr"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteBurgundy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meursault"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CabernetFranc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CabernetSauvignon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaliforniaWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chardonnay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheninBlanc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DessertWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IceWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetRiesling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DryWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DryRedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DryWhiteWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EarlyHarvest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrenchWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullBodiedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gamay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GermanWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ItalianWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chianti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LateHarvest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meritage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anjou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscadet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sancerre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tours"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteLoire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Merlot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PetiteSyrah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PinotBlanc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DryRedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedBordeaux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedBurgundy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Riesling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoseWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semillon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SauvignonBlanc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TableWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TexasWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zinfandel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonConsumableThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vintage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VintageYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WineDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WineColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WineTaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WineBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WineFlavor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WineSugar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#adjacentRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#course"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDrink"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFood"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVintageTear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWineDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#madeFromFruit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#madeFromGrape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#madeIntoWine"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#EdibleThing"/>
+        <Class IRI="#ConsumableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dessert"/>
+        <Class IRI="#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheeseNutsDessert"/>
+        <Class IRI="#Dessert"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetDessert"/>
+        <Class IRI="#Dessert"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fowl"/>
+        <Class IRI="#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DarkMeatFowl"/>
+        <Class IRI="#Fowl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightMeatFowl"/>
+        <Class IRI="#Fowl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meat"/>
+        <Class IRI="#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonRedMeat"/>
+        <Class IRI="#Meat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedMeat"/>
+        <Class IRI="#Meat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonSpicyRedMeat"/>
+        <Class IRI="#RedMeat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpicyRedMeat"/>
+        <Class IRI="#RedMeat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonSweetFruit"/>
+        <Class IRI="#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherTomatoBasedFood"/>
+        <Class IRI="#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pasta"/>
+        <Class IRI="#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithRedSauce"/>
+        <Class IRI="#Pasta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithNonSpicyRedSauce"/>
+        <Class IRI="#PastaWithRedSauce"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithSpicyRedSauce"/>
+        <Class IRI="#PastaWithRedSauce"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithWhiteSauce"/>
+        <Class IRI="#Pasta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithHeavyCreamSauce"/>
+        <Class IRI="#PastaWithWhiteSauce"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithLightCreamSauce"/>
+        <Class IRI="#PastaWithWhiteSauce"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seafood"/>
+        <Class IRI="#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish"/>
+        <Class IRI="#Seafood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlandFish"/>
+        <Class IRI="#Fish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonBlandFish"/>
+        <Class IRI="#Fish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shellfish"/>
+        <Class IRI="#Seafood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonOysterShellfish"/>
+        <Class IRI="#Shellfish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OysterShellfish"/>
+        <Class IRI="#Shellfish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetFruit"/>
+        <Class IRI="#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grape"/>
+        <Class IRI="#SweetFruit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EatingGrape"/>
+        <Class IRI="#Grape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WineGrape"/>
+        <Class IRI="#Grape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meal"/>
+        <Class IRI="#ConsumableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MealCourse"/>
+        <Class IRI="#ConsumableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlandFishCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheeseNutsFowlCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DarkMeatFowlCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DessertCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FishCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FruitCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightMeatFowlCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonBlandFishCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonOysterShellfishCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonRedMeatCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonSpicyRedMeatCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonSweetFruitCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherTomatoBasedFoodCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OysterShellfishCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithHeavyCreamCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithightCreamCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithNonSpicyRedSauceCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaWithSpicyRedSauceCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedMeatCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeafoodCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShellfishCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpicyRedMeatCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetDessertCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetFruitCourse"/>
+        <Class IRI="#MealCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotableLiquid"/>
+        <Class IRI="#ConsumableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Juice"/>
+        <Class IRI="#PotableLiquid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wine"/>
+        <Class IRI="#PotableLiquid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlsatianWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beaujolais"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bordeaux"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medoc"/>
+        <Class IRI="#Bordeaux"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Margaux"/>
+        <Class IRI="#Medoc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pauillac"/>
+        <Class IRI="#Medoc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedBordeaux"/>
+        <Class IRI="#Bordeaux"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sauternes"/>
+        <Class IRI="#Bordeaux"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StEmilion"/>
+        <Class IRI="#Bordeaux"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteBordeaux"/>
+        <Class IRI="#Bordeaux"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burgundy"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedBurgundy"/>
+        <Class IRI="#Burgundy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CotesDOr"/>
+        <Class IRI="#RedBurgundy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteBurgundy"/>
+        <Class IRI="#Burgundy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meursault"/>
+        <Class IRI="#WhiteBurgundy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CabernetFranc"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CabernetSauvignon"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaliforniaWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chardonnay"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheninBlanc"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DessertWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IceWine"/>
+        <Class IRI="#DessertWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetRiesling"/>
+        <Class IRI="#DessertWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DryWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DryRedWine"/>
+        <Class IRI="#DryWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DryWhiteWine"/>
+        <Class IRI="#DryWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EarlyHarvest"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrenchWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullBodiedWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gamay"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GermanWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ItalianWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chianti"/>
+        <Class IRI="#ItalianWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LateHarvest"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loire"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meritage"/>
+        <Class IRI="#Loire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anjou"/>
+        <Class IRI="#Loire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muscadet"/>
+        <Class IRI="#Loire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sancerre"/>
+        <Class IRI="#Loire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tours"/>
+        <Class IRI="#Loire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteLoire"/>
+        <Class IRI="#Loire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Merlot"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PetiteSyrah"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PinotBlanc"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PinotNoir"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <Class IRI="#RedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DryRedWine"/>
+        <Class IRI="#RedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedBordeaux"/>
+        <Class IRI="#RedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedBurgundy"/>
+        <Class IRI="#RedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Riesling"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoseWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semillon"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SauvignonBlanc"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TableWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TexasWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zinfandel"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WineColor"/>
+        <Class IRI="#WineDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WineTaste"/>
+        <Class IRI="#WineDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WineBody"/>
+        <Class IRI="#WineDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WineFlavor"/>
+        <Class IRI="#WineDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WineSugar"/>
+        <Class IRI="#WineDescriptor"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#adjacentRegion"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#course"/>
+        <Class IRI="#Meal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDrink"/>
+        <Class IRI="#MealCourse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFood"/>
+        <Class IRI="#MealCourse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVintageTear"/>
+        <Class IRI="#Vintage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWineDescriptor"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#madeFromFruit"/>
+        <Class IRI="#ConsumableThing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#madeFromGrape"/>
+        <Class IRI="#ConsumableThing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#adjacentRegion"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#course"/>
+        <Class IRI="#MealCourse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDrink"/>
+        <Class IRI="#PotableLiquid"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFood"/>
+        <Class IRI="#EdibleThing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVintageTear"/>
+        <Class IRI="#VintageYear"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWineDescriptor"/>
+        <Class IRI="#WineDescriptor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#madeFromFruit"/>
+        <Class IRI="#Fruit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#madeFromGrape"/>
+        <Class IRI="#Grape"/>
+    </ObjectPropertyRange>
+</Ontology>

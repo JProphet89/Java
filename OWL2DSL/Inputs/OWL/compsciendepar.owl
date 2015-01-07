@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jprophet89/ontologies/2013/11/compsciendepar"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/jprophet89/ontologies/2013/11/compsciendepar">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Worker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Faculty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssistantProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssociateProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisitingProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lecturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostDoc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResearchAssistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeachingAssistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrativeStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClericalStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemsStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UndergraduateStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GraduateStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#School"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#University"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Program"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResearchGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechnicalReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JournalArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConferencePaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnofficialPublication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Research"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Schedule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#publicationDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#publicationAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#publicationResearch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#softwareVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#softwareDocumentation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teacherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teachingAssistantOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#emailAddress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#head"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#undergraduateDegreeFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mastersDegreeFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#doctoralDegreeFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#advisor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affiliatedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#member"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#alumnus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affiliateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#orgPublication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#researchInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#researchProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#listedCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tenured"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Worker"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Faculty"/>
+        <Class IRI="#Worker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssistantProfessor"/>
+        <Class IRI="#Professor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssociateProfessor"/>
+        <Class IRI="#Professor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullProfessor"/>
+        <Class IRI="#Professor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisitingProfessor"/>
+        <Class IRI="#Professor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lecturer"/>
+        <Class IRI="#Faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostDoc"/>
+        <Class IRI="#Faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assistant"/>
+        <Class IRI="#Worker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchAssistant"/>
+        <Class IRI="#Assistant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeachingAssistant"/>
+        <Class IRI="#Assistant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeStaff"/>
+        <Class IRI="#Worker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="#AdministrativeStaff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chair"/>
+        <Class IRI="#AdministrativeStaff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dean"/>
+        <Class IRI="#AdministrativeStaff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClericalStaff"/>
+        <Class IRI="#AdministrativeStaff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemsStaff"/>
+        <Class IRI="#AdministrativeStaff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UndergraduateStudent"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GraduateStudent"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Department"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#School"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#University"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Program"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchGroup"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Institute"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TechnicalReport"/>
+        <Class IRI="#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JournalArticle"/>
+        <Class IRI="#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConferencePaper"/>
+        <Class IRI="#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnofficialPublication"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manual"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specification"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Course"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Research"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#publicationAuthor"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#publicationResearch"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#softwareDocumentation"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teacherOf"/>
+        <Class IRI="#Faculty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teachingAssistantOf"/>
+        <Class IRI="#TeachingAssistant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takesCourse"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#head"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#undergraduateDegreeFrom"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mastersDegreeFrom"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#doctoralDegreeFrom"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#advisor"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#subOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affiliatedOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#member"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#alumnus"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affiliateOf"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#orgPublication"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#researchInterest"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#researchProject"/>
+        <Class IRI="#ResearchGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#listedCourse"/>
+        <Class IRI="#Schedule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#publicationAuthor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#publicationResearch"/>
+        <Class IRI="#Research"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#softwareDocumentation"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teacherOf"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teachingAssistantOf"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takesCourse"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#head"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#undergraduateDegreeFrom"/>
+        <Class IRI="#University"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mastersDegreeFrom"/>
+        <Class IRI="#University"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#doctoralDegreeFrom"/>
+        <Class IRI="#University"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#advisor"/>
+        <Class IRI="#Professor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#subOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affiliatedOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#member"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#alumnus"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affiliateOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#orgPublication"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#researchInterest"/>
+        <Class IRI="#Research"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#researchProject"/>
+        <Class IRI="#Research"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#listedCourse"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+</Ontology>

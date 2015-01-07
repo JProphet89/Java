@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_owl2dsl" default="compile.module.owl2dsl">
+  <dirname property="module.owl2dsl.basedir" file="${ant.file.module_owl2dsl}"/>
+  
+  <property name="module.jdk.home.owl2dsl" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.owl2dsl" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.owl2dsl" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.owl2dsl" value="-encoding UTF-8 -source 1.7 ${compiler.args}"/>
+  
+  <property name="owl2dsl.output.dir" value="${module.owl2dsl.basedir}/out/production/Owl2DSL"/>
+  <property name="owl2dsl.testoutput.dir" value="${module.owl2dsl.basedir}/out/test/Owl2DSL"/>
+  
+  <path id="owl2dsl.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="owl2dsl.module.production.classpath">
+    <path refid="${module.jdk.classpath.owl2dsl}"/>
+    <path refid="library.dom4j-2.0.0-alpha-2.classpath"/>
+  </path>
+  
+  <path id="owl2dsl.runtime.production.module.classpath">
+    <pathelement location="${owl2dsl.output.dir}"/>
+    <path refid="library.dom4j-2.0.0-alpha-2.classpath"/>
+  </path>
+  
+  <path id="owl2dsl.module.classpath">
+    <path refid="${module.jdk.classpath.owl2dsl}"/>
+    <pathelement location="${owl2dsl.output.dir}"/>
+    <path refid="library.dom4j-2.0.0-alpha-2.classpath"/>
+  </path>
+  
+  <path id="owl2dsl.runtime.module.classpath">
+    <pathelement location="${owl2dsl.testoutput.dir}"/>
+    <pathelement location="${owl2dsl.output.dir}"/>
+    <path refid="library.dom4j-2.0.0-alpha-2.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.owl2dsl">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.owl2dsl">
+    <patternset refid="excluded.from.module.owl2dsl"/>
+  </patternset>
+  
+  <path id="owl2dsl.module.sourcepath">
+    <dirset dir="${module.owl2dsl.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.owl2dsl" depends="compile.module.owl2dsl.production,compile.module.owl2dsl.tests" description="Compile module Owl2DSL"/>
+  
+  <target name="compile.module.owl2dsl.production" depends="register.custom.compilers" description="Compile module Owl2DSL; production classes">
+    <mkdir dir="${owl2dsl.output.dir}"/>
+    <javac2 destdir="${owl2dsl.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.owl2dsl}/javac">
+      <compilerarg line="${compiler.args.owl2dsl}"/>
+      <bootclasspath refid="owl2dsl.module.bootclasspath"/>
+      <classpath refid="owl2dsl.module.production.classpath"/>
+      <src refid="owl2dsl.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.owl2dsl"/>
+    </javac2>
+    
+    <copy todir="${owl2dsl.output.dir}">
+      <fileset dir="${module.owl2dsl.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.owl2dsl.tests" depends="register.custom.compilers,compile.module.owl2dsl.production" description="compile module Owl2DSL; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.owl2dsl" description="cleanup module">
+    <delete dir="${owl2dsl.output.dir}"/>
+    <delete dir="${owl2dsl.testoutput.dir}"/>
+  </target>
+</project>

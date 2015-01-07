@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact name="Owl2DSL:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Owl2DSL_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Owl2DSL.jar">
+        <element id="module-output" name="Owl2DSL" />
+      </element>
+      <element id="library" level="project" name="commons-io-2.4 (2)" />
+      <element id="library" level="project" name="dom4j-2.0.0-ALPHA-2" />
+      <element id="library" level="project" name="antlr-3.5.1-complete" />
+      <element id="library" level="project" name="json-simple-1.1.1" />
+    </root>
+  </artifact>
+</component>

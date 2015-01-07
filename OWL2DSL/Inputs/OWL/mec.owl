@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.mec.org/ontologies/mec.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.mec.org/ontologies/mec.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Casa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Casamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chegada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concelho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distrito"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edificio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emigracao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emigrante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Escola"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fabrica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freguesia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Imagem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Localidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Localizacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lugar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Morte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nascimento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Partida"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passaporte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#País"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pessoa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Representavel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vida"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vila"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#chegouA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#com"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#feitoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#localizadoEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participouEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partiuDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#realizadoEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#representadoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temCriador"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temDocumento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temFamilia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temFilho"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temMae"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temMorada"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temPai"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temVida"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Casa"/>
+        <Class IRI="#Edificio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Casamento"/>
+        <Class IRI="#Vida"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Casamento"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#com"/>
+            <Class IRI="#Pessoa"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chegada"/>
+        <Class IRI="#Emigracao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chegada"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#chegouA"/>
+            <Class IRI="#Lugar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concelho"/>
+        <Class IRI="#Localizacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distrito"/>
+        <Class IRI="#Localizacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edificio"/>
+        <Class IRI="#Representavel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edificio"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#representadoPor"/>
+            <Class IRI="#Imagem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edificio"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temMorada"/>
+            <Class IRI="#Lugar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emigracao"/>
+        <Class IRI="#Evento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emigrante"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emigrante"/>
+        <Class IRI="#Representavel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emigrante"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#participouEm"/>
+            <Class IRI="#Emigracao"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emigrante"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temDocumento"/>
+            <Class IRI="#Passaporte"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Escola"/>
+        <Class IRI="#Edificio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evento"/>
+        <Class IRI="#Representavel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evento"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#representadoPor"/>
+            <Class IRI="#Imagem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fabrica"/>
+        <Class IRI="#Edificio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freguesia"/>
+        <Class IRI="#Localidade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital"/>
+        <Class IRI="#Edificio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Imagem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temCriador"/>
+            <Class IRI="#Pessoa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Localidade"/>
+        <Class IRI="#Localizacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lugar"/>
+        <Class IRI="#Representavel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lugar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#localizadoEm"/>
+            <Class IRI="#Concelho"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lugar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#localizadoEm"/>
+            <Class IRI="#Distrito"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lugar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#localizadoEm"/>
+            <Class IRI="#Freguesia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lugar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#localizadoEm"/>
+            <Class IRI="#País"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lugar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#representadoPor"/>
+            <Class IRI="#Imagem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Morte"/>
+        <Class IRI="#Vida"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nascimento"/>
+        <Class IRI="#Vida"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nascimento"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#feitoPor"/>
+            <Class IRI="#Pessoa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nascimento"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizadoEm"/>
+            <Class IRI="#Lugar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Partida"/>
+        <Class IRI="#Emigracao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Partida"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#partiuDe"/>
+            <Class IRI="#Lugar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#País"/>
+        <Class IRI="#Localizacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pessoa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temFilho"/>
+            <Class IRI="#Pessoa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pessoa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temVida"/>
+            <Class IRI="#Vida"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pessoa"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#temMae"/>
+            <Class IRI="#Pessoa"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pessoa"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#temPai"/>
+            <Class IRI="#Pessoa"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vida"/>
+        <Class IRI="#Evento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vila"/>
+        <Class IRI="#Localidade"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Casa"/>
+        <Class IRI="#Escola"/>
+        <Class IRI="#Fabrica"/>
+        <Class IRI="#Hospital"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Casamento"/>
+        <Class IRI="#Morte"/>
+        <Class IRI="#Nascimento"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Chegada"/>
+        <Class IRI="#Partida"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Concelho"/>
+        <Class IRI="#País"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Distrito"/>
+        <Class IRI="#País"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Edificio"/>
+        <Class IRI="#Evento"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Freguesia"/>
+        <Class IRI="#País"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temFilho"/>
+        <ObjectProperty IRI="#temFamilia"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temMae"/>
+        <ObjectProperty IRI="#temFamilia"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temPai"/>
+        <ObjectProperty IRI="#temFamilia"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#temMae"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#temPai"/>
+    </FunctionalObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#temMae"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#temPai"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#chegouA"/>
+        <Class IRI="#Chegada"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#com"/>
+        <Class IRI="#Casamento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#feitoPor"/>
+        <Class IRI="#Nascimento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#localizadoEm"/>
+        <Class IRI="#Lugar"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participouEm"/>
+        <Class IRI="#Emigrante"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partiuDe"/>
+        <Class IRI="#Partida"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#realizadoEm"/>
+        <Class IRI="#Nascimento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#representadoPor"/>
+        <Class IRI="#Representavel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temDocumento"/>
+        <Class IRI="#Emigrante"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temFamilia"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temMorada"/>
+        <Class IRI="#Edificio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temVida"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#chegouA"/>
+        <Class IRI="#Lugar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#com"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#feitoPor"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#localizadoEm"/>
+        <Class IRI="#Localizacao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participouEm"/>
+        <Class IRI="#Emigracao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partiuDe"/>
+        <Class IRI="#Lugar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#realizadoEm"/>
+        <Class IRI="#Lugar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#representadoPor"/>
+        <Class IRI="#Imagem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temDocumento"/>
+        <Class IRI="#Passaporte"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temFamilia"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temMorada"/>
+        <Class IRI="#Lugar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temVida"/>
+        <Class IRI="#Vida"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,34 @@
+Ontology{
+	Concepts[
+		{Laundry},
+		{Order},
+		{Client},
+		{Bag},
+		{Item},
+		{
+			Type,
+			Attributes[
+		        {classes string},
+		        {tinge string},
+		    	{material string}
+		    ]
+		},
+		{Quantity}
+	]
+	Hierarchies[
+	]
+	Relations[
+		{has},
+        {owns},
+        {receives},
+        {contains}
+	]
+	Links[
+		{Laundry receives Order},
+        {Client owns Order},
+        {Order contains Bag},
+		{Bag contains Item},
+        {Item has max 1 Type},
+        {Item has max 1 Quantity}
+	]
+}
